@@ -1,0 +1,100 @@
+/*  ------- SELECTORES ------- */
+
+/* Selector Universal */
+* {                      /* Selector para todo el documento */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+/* Selector de Etiqueta */
+h1{
+    background: red;      /* Cambia color de Fondo */
+    color: white;         /* Cambia el Color de tecto o icono */
+    padding: 10px;          /* Genera un espacio al rededor del texto, imagen o lo que sea */
+}
+
+a{
+    color: green;
+    text-decoration: none;  /* Elimina la linea de abajo de los enlaces */
+    font-size: 18px;        /* Cambia el tamaño de la letra */
+}
+
+footer a{
+    color: firebrick;
+}
+
+
+
+/* Selector de Id */
+#descripcion,                   /* selecciona el id="descripcion" de la etiqueta que este asignada */
+#titulo                         /* Poniendo coma y agregando otro id aplicamos las dos propiedades */
+    {                   
+    border: 1px solid black;  /* agrega borde tamaño y color */
+    padding: 15px;    
+}
+
+#titulo{
+    background: blue;
+    border: dashed black;       /* borde punteado */
+}
+
+
+
+/* Selector de Clase */
+.parrafo{
+    font-style: italic;             /* Estilo de Letra */
+    text-decoration: underline;     /* Decoracion de Letra */
+    font-weight: bold;              /* Grosor de Fuente */
+}
+
+.parrafo1, .parrafo2{
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.parrafo2{
+    background-color: orangered;
+    color: black;
+}
+
+
+
+/* Selector de Atributo */
+#usuario form{
+    border: 5px solid blue;
+    margin: 10px;               /* Agregar margenes al rededor de el form */
+    padding: 20px ;
+}
+
+#usuario *{
+    display: block;         /* Mostrar los elementos en un solo bloque cada uno */
+}
+
+input[type="text"]{         /* Seleccionar un atributo dentro de la etiqueta input*/
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 300px;
+}
+
+input[type="submit"]{
+    background: blue;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;      /* Transformar texto de Mayuscula a minuscula o viseversa*/
+    border: 1px solid black;
+    cursor: pointer;                /* Hacer efecto de cursor de mano en el puntero*/
+}
+
+
+
+/* Selectores hijo */
+#menu > li > a{                 /* seleccionar solo a los hijos de un selector en especifico*/
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+
+
+/**/
