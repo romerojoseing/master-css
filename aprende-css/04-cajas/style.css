@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding: 40px;
+}
+
+#cajas{                 
+    max-width: 1010px;   /*Tamaño para tener 3 columnas de cajas, depende de cada resolucion de pantalla*/
+    border: 5px solid black;
+}
+
+.caja{
+    width: 250px;               /*Tamaño ancho de caja*/
+    height: 250px;              /*Tamaño alto de caja*/
+    background-color: cyan;
+    border: 5px solid darkslategray;
+    margin: 15px 15px 15px 15px;        /*Top Right Botton Left*/
+    margin-top: 10px;
+    margin-left: 15px;                    /*Margenes externos*/
+    margin-right: 20px;
+    margin-bottom: 13px;
+    padding: 20px;                      /*Margenes internos*/
+    float: left;                    /*Flotar las cajas para que se muevan en una direccion junstas*/
+    display: block;                 /* Siempre poner display block para lo que son las cajas------------------------*/ 
+}
+
+.caja p{
+    font-weight: bold;
+    text-align: center;             /*Alinear horizontalmente*/
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 235px;
+}
+
+.clearfix{          /*Eliminar flotados*/
+    float: none;
+    clear: both;        /*Limpiar todos con este atributo*/
+}
