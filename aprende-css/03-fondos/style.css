@@ -1,0 +1,34 @@
+body{
+   /*
+        background-color: grey;         /* Color de Fondo /
+        background-image: url(img/pic.webp);            /*Enlazar esta imagen al fondo/
+        background-repeat: no-repeat;                  /*Repetir el fondo tantas veces sea necesaria para llenar el area de la pagina/
+        background-size: 100%;                      /* Expandir la imagen al 100% del sitio /
+        color: white;
+        background-attachment: fixed;               /* Dejar el fondo fijo y que lo de mas el sitio se mueva/
+        background-position: right bottom;          /* Posicionar fondos /
+   */
+    text-align: justify;
+    text-indent: 20px;       /* Generar un espacio antes de cada parrafo */
+    word-spacing: 10px;      /* Generar espacio entre palabras*/
+    letter-spacing: 5px;     /* Generar espacios entre letras*/ 
+}      
+
+#caja{
+    border: 5px solid black;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    text-align: center;             /* ALinear el texto */
+    line-height: 50px;              /* Ajustar el espacio entre lineas*/
+    text-transform: uppercase;       /* Poner las letras en Mayusculas*/
+    text-decoration: underline ;       /* Poner Subrayado de texto*/
+    vertical-align: top;            /* Alineacion Vertical*/
+    
+}
+
+h2{
+    color: purple;
+    background: white;
+    border: 1px solid black;
+}
