@@ -1,0 +1,53 @@
+/* Configuracion de fuentes en CSS*/
+
+@font-face{                                     /*Cargar fuente desde carpeta*/
+    font-family: PoppinsFuenteCustom;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+
+h1{
+    /*font-family: Arial, Helvetica, sans-serif;          /* Usar una familia especifica de Fuente */
+    font-family: 'Roboto Mono', monospace;               /* Cargar fuente importada*/
+    font-style: italic;                                 /* Estilo de la Fuente */
+}
+
+h3{
+    font-family: PoppinsFuenteCustom, "Comic Sans MS";
+    font-size: 25px;                        /* Tamaño especifico de fuente*/
+    font-weight: lighter;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;              /* Grosor de la fuente */
+}
+
+
+
+/* Trabajar con los Colores */
+
+h2{
+    /* Colores del sistema */
+    color: mediumpurple;
+
+    /* Colores del hexadecimales*/
+    color: #000000;
+
+    /* Colores del RGB */
+    color: rgb(255, 255, 255);
+
+    /* Colores del RGBA */
+
+    background: rgb(255, 160, 122, 0.3);
+}
+
+
+
+
+
+
+
+
+
