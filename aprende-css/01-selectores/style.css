@@ -97,4 +97,11 @@ input[type="submit"]{
 
 
 
-/**/
+/* Prioridad */
+#saludo h1{
+    background: brown;
+}
+
+h1{
+    background: blueviolet !important;  /* Regla para darle prioridad maxima a la regla*/
+}
