@@ -49,7 +49,7 @@ Ejercicio completo con HTML y CSS
 
 #menu ul li{
     /*display: inline-block;*/
-    display: block;
+    display: block;                 /* ALinear menu Nav de tal manera que queden en bloques y sean uno alado del otro*/
     float: left;
     border-right: 1px solid grey;
     cursor: pointer;
@@ -65,15 +65,20 @@ Ejercicio completo con HTML y CSS
     background-color: grey ;
 }
 
-#menu > ul li:hover a{
+#menu > ul li:hover a{          /* atributo hover para hacer la funcion de que cuando pase el cursor cambie de color */
     color: white;
 }
 
 #principal{
     float: left;
     width: 69%;
-    
+}
 
+#principal h1{
+    color: grey;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px 2px black; 
 }
 
 #lateral{
@@ -82,23 +87,36 @@ Ejercicio completo con HTML y CSS
     color: grey;
     background-color: whitesmoke;
     text-align: center;
-    min-height: 1085px;
+    min-height: 500px;
+    max-height: 1400px;
     margin-top: 15px;
-    padding-top: 400px;
+    overflow: scroll;
+    overflow-y: scroll;     /* scroll en casilla de texto*/
+    overflow-x: hidden;
+    
 }
 
 .caja{
     width: 40%;
     height: 300px;
-    background-color: tomato;
+    background-color: grey;
     color: white;
-    border: 5px solid grey;
+    border: 5px solid #444444;
     padding: 20px;
     margin: 15px;
     display: block;
     float: left;
     text-align: center;
     line-height: 300px;
+    box-shadow: 0px 0px 15px black;   /* Sombras Horizontal Vertical Grosor y Color*/
+    border-radius: 30px 10px 4px 60px;  /* Sup iz, sup der, inf der, inf iz*/
+    border-radius: 50%;
+    border-radius: 30px;
+    
+}
+
+.sombra-interior{
+    box-shadow: 0px 0px 15px black inset;   /* Sombras de caja interior Horizontal Vertical Grosor y Color*/
 }
 
 .clearfix{
@@ -111,4 +129,52 @@ footer{
     text-align: center;
     background-color: whitesmoke;
     color: grey;
+}
+
+.libre{
+    position: absolute;         /*Posicion absoluta que pasa por encima de cualquier elemento*/
+    top: 10%;
+    left: 0px;
+    z-index: 1;             /*Relevancia de elementos para saber cual va encima, mientras mas alto el indice va arriba del todo*/
+
+    color: white;
+    background-color: grey;
+    border: 1px solid #444444;
+    height: 100px;
+    width: 80px;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+}
+
+.libre1{
+    position: absolute;
+    top: 20%;
+    left: 0px;
+    z-index: 2;
+    
+    color: white;
+    background-color: #444444;
+    border: 1px solid grey;
+    height: 100px;
+    width: 80px;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+}
+
+.fija{
+    position: fixed;            /* Posicio fijada donde se sigue el scroll de la pagina*/
+    top: 50%;
+    left: 0px;
+    z-index: 2;
+    
+    color: white;
+    background-color: #444444;
+    border: 1px solid grey;
+    height: 100px;
+    width: 80px;
+    padding: 10px;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
 }
