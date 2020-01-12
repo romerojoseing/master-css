@@ -1,0 +1,50 @@
+/* Pseudoclases  : algo o :: algo*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+ul li:first-child{          /* Seleccionar el primer hijo de la lista*/ 
+    color: indigo;
+    font-weight: bold;
+}
+
+ul li:nth-child(2){          /*Seleccionar un elemento especifico de la lista*/
+    color: orangered;
+    font-weight: bold;
+}
+
+ul li:last-child{          /* Seleccionar el ultimo hijo de la lista*/ 
+    color: green;
+    font-weight: bold;
+}
+
+#enlace{
+    font-size: 25px;
+    color: red;
+}
+
+#enlace:link{       /*Cuando no he visitado enlace*/
+    color: grey;
+}
+
+#enlace:visited{       /*Cuando ya he visitado el enlace*/
+    color: black;
+}
+
+#enlace:hover{      /*Cuando se pasa el cursor por encima cambia el color*/
+    color: brown;
+}
+
+#enlace:active{         /*Cuando seleccionamos el enlace*/
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input:focus{            /*Para dar estilos cuando estemos trabajando en algo*/
+    border: 4px dashed grey;
+}
