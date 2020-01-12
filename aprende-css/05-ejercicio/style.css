@@ -1,0 +1,114 @@
+/*
+Ejercicio completo con HTML y CSS
+1. Crear un documento HTML y vincularlo con CSS
+2. Crear una estructura HTML que cuente con 
+    2.1 Un contenedor general
+    2.2 Cabecera
+    2.3 Menu
+    2.4 Barra Lateral
+    2.5 Seccion de Contenido Principal
+    2.6 Elementos dentro del contenedor principal
+    2.7 Footer
+3. Todo el comntenido debe estar dentro del contenedor general
+    3.1 Ancho del contenedor 1200px y estar centrado
+    3.2 Header debe ocupar el 100% de ancho y texto Centrado
+    3.3 el menu debe tener los elementos uno a lado del otro
+    3.4 el contenido principal debe tener un ancho del 70%
+    3.5 el contenido del contenedor principal debe ser una cuadricula con 4 lineas de dos cajas
+    3.6 barra lateral debe tener un 30% de ancho
+    3.7 el footer debe tener un ancho del 100% y estar a bajo del todo
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.general{
+    width: 1200px;
+    background-color: white;
+    border: 1px solid grey;
+    margin: 0px auto;           /* Alinear los items en el centro de la pantalla*/
+    margin-top: 30px;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: grey;
+    color: whitesmoke;
+    line-height: 90px;
+}
+
+#menu{
+    background-color: whitesmoke;
+}
+
+#menu ul li{
+    /*display: inline-block;*/
+    display: block;
+    float: left;
+    border-right: 1px solid grey;
+    cursor: pointer;
+}
+
+#menu ul li a{
+    padding: 20px;
+    display: block;
+    color: grey;    
+}
+
+#menu ul li:hover{
+    background-color: grey ;
+}
+
+#menu > ul li:hover a{
+    color: white;
+}
+
+#principal{
+    float: left;
+    width: 69%;
+    
+
+}
+
+#lateral{
+    float: left;
+    width: 30%;
+    color: grey;
+    background-color: whitesmoke;
+    text-align: center;
+    min-height: 1085px;
+    margin-top: 15px;
+    padding-top: 400px;
+}
+
+.caja{
+    width: 40%;
+    height: 300px;
+    background-color: tomato;
+    color: white;
+    border: 5px solid grey;
+    padding: 20px;
+    margin: 15px;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 300px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    color: grey;
+}
