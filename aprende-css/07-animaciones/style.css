@@ -1,0 +1,63 @@
+#boton{
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    border: 10px solid green;
+    transition: all 500ms;
+}
+
+#boton:hover{
+    background-color: honeydew;
+    color: green;
+    border: 10px solid green;
+    border-radius: 10px;
+}
+
+#caja{
+    background-color: green;
+    color:white;
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    text-align: center;
+    animation-name: desplazamiento;         /*Nombre de la animación*/
+    animation-duration: 10s;                /*Tiempo de duracion*/
+    animation-iteration-count: infinite;     /*veces cuanto se va repetie la animacion*/
+    animation-timing-function: linear;
+}
+
+@keyframes desplazamient{
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    }
+}
+
+@keyframes desplazamiento{
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1000px;
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}
