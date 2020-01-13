@@ -1,13 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">              <!-- Metadatos para leer simbolos y letras como la ñ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Maquetacion 1</title>
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">  <!-- Icono de Pestaña -->
+    <link rel="stylesheet" href="css/style.css">                        <!-- Estilos CSS -->
+    
 </head>
 <body>
+
+    <!-- Inicio de la Cabecera -->
+    <header id="header">
+        <div id="logotipo">
+            <img src="img/logo.png" alt="Logotipo de la Web">
+        </div>
+        <h1><a href="index.html">Master en CSS</a></h1>
+    </header>
+    <!-- Fin de la Cabecera -->
+
+
+    <!-- Inicio Menú de Navegación -->
+    <nav id="nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html">Contenido</a></li>
+            <li><a href="index.html">Requerimientos</a></li>
+            <li><a href="index.html">Lenguajes</a>
+                <!-- Menú Desplegable -->
+                <ul>
+                    <li><a href="index.html">HTML</a></li>
+                    <li><a href="index.html">CSS</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">Frameworks</a>
+                <ul>
+                    <li><a href="index.html">Laravel</a></li>
+                    <li><a href="index.html">React</a></li>
+                    <li><a href="index.html">VUE</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">Proyectos</a></li>
+            <li><a href="index.html">Instructor</a></li>
+            <li><a href="index.html">Reseñas</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="index.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- Fin del Menú de Navegación -->
+
+    <!-- Inicio de Contenido Central -->
+    <div id="content">
+        
+        <!-- Inicio de Barra Lateral -->
+        <aside id="aside">
+            <div class="widget" id="login">
+                <h3>Entrar a la Web</h3>
+                <form action="">
+                    <label for="">Usuario</label>
+                    <input type="text">
     
+                    <label for="">Contraseña</label>
+                    <input type="password">
+    
+                    <input type="submit" value="Entrar">
+                </form>
+                <a href="#">Zona de Alumnos</a>
+                <a href="#">Zona de Profesores</a>
+                <a href="#">Zona de Calificaciones</a>
+            </div>
+
+            <div class="widget" id="login">
+                <h3 class="blue">Aula Virtual 1</h3>
+                <form action="">
+                    <label for="">Nombre de Usuario</label>
+                    <input type="text">
+    
+                    <label for="">Contraseña</label>
+                    <input type="password">
+    
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+
+            <div class="widget" id="login">
+                <h3 class="red">Aula Virtual 2</h3>
+                <form action="">
+                    <label for="">Nombre de Usuario</label>
+                    <input type="text">
+    
+                    <label for="">Contraseña</label>
+                    <input type="password">
+    
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+
+            <div class="widget" id="login">
+                <h3>Enlaces de Interes</h3>
+                <ul>
+                    <li><a href="#">Cursos Recomendados</a></li>
+                    <li><a href="#">Cursos Recomendados</a></li>
+                    <li><a href="#">Cursos Recomendados</a></li>
+                    <li><a href="#">Cursos Recomendados</a></li>
+                    <li><a href="#">Cursos Recomendados</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        
+        <!-- Fin de Barra lateral -->      
+        
+        <!-- Inicio de Secciones -->
+        <div id="sections">
+            <section id="frontend">
+                <span class="stikers">
+                    <img class="stikerone" src="img/scotch.png" alt="pegatina">
+                    <img class="stikertwo" src="img/scotch.png" alt="pegatina">
+                </span>
+                <h2 class="titulo">Noticias de Frontend</h2>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+            </section>
+            <section id="backend">
+                <span class="stikers">
+                    <img class="stikerone" src="img/scotch.png" alt="pegatina">
+                    <img class="stikertwo" src="img/scotch.png" alt="pegatina">
+                </span>
+                <h2 class="titulo blue">Noticias de Backend</h2>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+            </section>
+            <section id="instructor">
+                <span class="stikers">
+                    <img class="stikerone" src="img/scotch.png" alt="pegatina">
+                    <img class="stikertwo" src="img/scotch.png" alt="pegatina">
+                </span>
+                <h2 class="titulo red">Noticias de Instructor</h2>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+                <article id="article">
+                    <span class="icon">a</span>
+                    <p>
+                        <a href="#"> Titulo de la Entrada</a>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum cumque id laboriosam aperiam voluptas esse excepturi tempora! Numquam a deleniti modi aspernatur assumenda quis dignissimos repellendus, sint hic laborum?lore
+                    </p>
+                    <span class="date"> [20 - 12 - 2020. Victor Robles]</span>
+                </article>
+            </section>
+            
+        </div>
+        <!-- Fin de Secciones -->
+        <aside id="frase">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et incidunt possimus dolorum quisquam ratione ea eius odio, odit nihil, <br><a href="#">Leer mas Frases.</a>
+        </aside>
+
+        <div id="history">
+            <a href="#"> [Ver historico de Noticias]</a>
+        </div>
+    </div>
+    <!-- Fin de Contenido Central -->
+
+    <!-- Inicio del Footer -->
+    <footer id="footer">
+        <p>
+            &copy; Desarrollador por Romero José <br>
+            Mas contenido e información en <a href="romerojose.com"> Romero José</a>
+        </p>
+    </footer>
+    <!-- Fin del Footer -->
+
 </body>
 </html>
