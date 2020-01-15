@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+#container{
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    background-color: gray;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: darkturquoise;
+    color: gray;
+    line-height: 150px;
+    text-align: center;
+}
+
+aside{
+    width: 25%;
+    color: #444444;
+    background-color: #cccccc;
+    float: left;
+    min-height: 700px;
+    text-align: center;
+    line-height: 700px;
+}
+
+#articles{
+    float: left;
+    width: 75%;
+    background-color: lightgreen;
+    text-align: center;
+    min-height: 700px;
+}
+
+#articles article{
+    width: 25%;
+    height: 150px;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    border: 2px solid white;
+    float: left;
+    margin: 15px;
+}
+ 
+
+/* Responsive */
+
+/* Desde la anchura 0px hasta la 888px */
+@media (max-width: 888px){
+    #articles article{
+        width: 40%;
+        background-color: red;
+    }
+}
+
+@media (max-width: 645px){
+    #container{
+        overflow: hidden;
+    }
+
+    aside{
+        float: none;
+        width: 100%;
+        min-height: 40px;
+        line-height: 40px;
+    }
+
+    #articles{
+        width: 100%;
+    }
+
+    #articles article{
+        width: 90%;
+        background-color: blue;
+    }
+}
+
+@media (max-width: 645px){
+    body{
+        background-color: grey;
+    }
+
+    #articles article{
+        width: 90%;
+        background-color: green;
+    }
+}
