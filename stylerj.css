@@ -1,0 +1,354 @@
+ /*---------------------- Estilo General para formatear los margenes del Documento ----------------------*/
+*{
+    margin: 0px;            /* Margenes externos en 0px */
+    padding: 0px;           /* Margenes internos en 0px */
+}
+
+
+
+/*---------------------- Importar Fuentes ----------------------*/
+
+/* Fuente de Texto Normal */
+@font-face {                                    
+    font-family: 'BebasNeue';                       /* Nombre que va tener la Fuente */
+    src: url('fonts/BebasNeue.otf');                /* URL de la Fuente */
+    font-weight: normal;                            /* Grosor de la Fuente */
+    font-style: normal;                             /* Estilo de la Fuente */
+}
+
+
+
+/* Fuente de Iconos */
+@font-face {                            
+    font-family: "WebSymbolsRegular";                                                        /* Nombre que va tener la Fuente */
+    src: url('fonts/websymbols-regular-webfont.eot');                                        /* URL de la Fuente */
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),     /* URL de la Fuente */
+         url('fonts/websymbols-regular-webfont.woff') format('woff'),                        /* URL de la Fuente */
+         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),                     /* URL de la Fuente */
+         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');        /* URL de la Fuente */
+    font-weight: normal;                                                                     /* Grosor de la Fuente */
+    font-style: normal;                                                                      /* Estilo de la Fuente */
+}
+
+
+
+/*---------------------- Estilos Generales ----------------------*/
+h1{                                                     /* Selector de Etiqueta */
+    /* Instrucciones */
+}
+
+#h1{                                                    /* Selector de Id */
+    /* Instrucciones */
+}
+
+.h1{                                                    /* Selector de Clase */
+    /* Instrucciones */
+}
+
+
+
+/* ---------------------- Estilos de un Contenedor ---------------------- */
+.wrap{  
+    width: 1200px;              /* Tamaño del Contenedor */
+    margin: 0px auto;           /* Centrar el Contenedor */
+}
+
+.clearfix{                      /*Eliminar flotados*/
+    float: none;
+    clear: both;                /*Limpiar todos con este atributo*/
+}
+
+
+
+/* ---------------------- Atribitos y condiciones de las fuentes y otros ---------------------- */
+h1{
+    color: white;               /* Cambia el Color de tecto o icono */
+    color: gray !important;     /* Darle importancia a esta regla sobre todo */
+    background: gray;           /* Cambia color de Fondo */
+    background-image: url(../img/bakbaner.png);
+    background-position: -200px -200px;
+    
+    font-size: 18px;              /* Tamaño de Fuente */
+    font-weight: 500;             /* Grosor de Fuente */
+    font-family: sans-serif;      /* Familia de Fuente */
+    font-style: normal;           /* Estilo de Fuente */
+
+    text-align: center;           /* Alinear el texto */
+    text-decoration: none;        /* Eliminar decoracion en texto (Enlaces) o usar el underline para agregar subrayado*/
+    text-transform: uppercase;    /* Transformar fuente Minusculas o Mayusculas */
+    text-shadow: 1px 1px 2px black;  /* Sombra en Texto X Y Grosor Color*/
+    text-indent: 20px;            /* Generar un espacio antes de cada parrafo */
+    word-spacing: 10px;           /* Generar espacio entre palabras*/
+    letter-spacing: 5px;          /* Generar espacios entre letras*/ 
+    line-height: 50px;            /* Ajustar el espacio entre lineas*/
+
+    width: 300px;                 /* Tamaño Horizontal del elemento */
+    min-width: 500px;             /* Tamaño Minimo de ancho */
+    max-width: 1400px;            /* Tamaño Maximo de ancho */
+    height: 200px;                /* Tamaño Vertical del elemento */
+    min-height: 500px;            /* Tamaño Minimo de alto */
+    max-height: 1400px;           /* Tamaño Maximo de alto */
+    
+    margin: 10px;                 /* Margen Externo del texto, imagen o lo que sea */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin: 15px 15px 15px 15px;  /* Top Right Botton Left */
+
+    padding: 10px;                /* Margen Interno del texto, imagen o lo que sea */
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding: 15px 15px 15px 15px; /* Top Right Botton Left */
+
+    border: 1px solid black;            /* Agregar borde Tamaño Tipo y Color */
+    box-shadow: 0px 0px 15px black;     /* Sombras Horizontal Vertical Grosor y Color*/
+    border-radius: 30px 10px 4px 60px;    /* Sup iz, sup der, inf der, inf iz*/
+    border-radius: 50%;
+    border-radius: 30px;
+
+    display: block;               /* Trabajar el elemnto como un bloque */
+    float: left;                  /* Flotar las cajas para que se muevan en una direccion junstas */
+
+    cursor: pointer;              /* Hacer efecto de cursor de mano en el puntero*/
+
+    position: absolute;           /*Posicion absoluta que pasa por encima de cualquier elemento*/
+    top: 10%;
+    left: 0px;
+    z-index: 1;                   /*Relevancia de elementos para saber cual va encima, mientras mas alto el indice va arriba del todo*/
+
+    position: fixed;              /* Posicio fijada donde se sigue el scroll de la pagina*/
+    top: 50%;
+    left: 0px;
+    z-index: 2;
+
+    overflow: scroll;
+    overflow-y: scroll;             /* scroll en casilla de texto*/
+    overflow-x: hidden;
+    overflow: hidden;               /* todo lo que se salga fuera del item no se ve */
+    
+}
+
+
+
+/*----------------------Colores ----------------------*/
+h1{
+    /* Colores del sistema */
+    color: mediumpurple;
+
+    /* Colores del hexadecimales*/
+    color: #000000;
+
+    /* Colores del RGB */
+    color: rgb(255, 255, 255);
+
+    /* Colores del RGBA */
+    background: rgb(255, 160, 122, 0.3);
+}
+
+
+
+/*--------------------- Formularios ---------------------*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+    border: 1px solid #c9c9c9;
+    padding: 1px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select{
+    border: 1px solid #70b231;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border-radius: 2px;
+    border: 1px solid #70b231;
+    width: 60px;
+    padding: 3px;
+    background-color: #70b231;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button{
+    box-shadow: 0px 0px 2px gray;
+}
+
+
+
+/*--------------------- Pseudoclases  : algo ---------------------*/
+
+ul li{
+    font-size: 20px;
+}
+
+ul li:first-child{          /* Seleccionar el primer hijo de la lista*/ 
+    color: indigo;
+    font-weight: bold;
+}
+
+ul li:nth-child(2){          /*Seleccionar un elemento especifico de la lista*/
+    color: orangered;
+    font-weight: bold;
+}
+
+ul li:last-child{          /* Seleccionar el ultimo hijo de la lista*/ 
+    color: green;
+    font-weight: bold;
+}
+
+#enlace{
+    font-size: 25px;
+    color: red;
+}
+
+#enlace:link{       /*Cuando no he visitado enlace*/
+    color: grey;
+}
+
+#enlace:visited{       /*Cuando ya he visitado el enlace*/
+    color: black;
+}
+
+#enlace:hover{      /*Cuando se pasa el cursor por encima cambia el color*/
+    color: brown;
+    transform: scale(1.2,1.2);     /* Hace mas grandes las letras mientras se aplique el efecto*/
+}
+
+#enlace:active{         /*Cuando seleccionamos el enlace*/
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input:focus{            /*Para dar estilos cuando estemos trabajando en algo*/
+    border: 4px dashed grey;
+}
+
+/*--------------------- Animaciones ---------------------*/
+
+#boton{
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    border: 10px solid green;
+    transition: all 500ms;
+}
+
+#boton:hover{
+    background-color: honeydew;
+    color: green;
+    border: 10px solid green;
+    border-radius: 10px;
+}
+
+#caja{
+    background-color: green;
+    color:white;
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    text-align: center;
+    animation-name: desplazamiento;         /*Nombre de la animación*/
+    animation-duration: 10s;                /*Tiempo de duracion*/
+    animation-iteration-count: infinite;     /*veces cuanto se va repetie la animacion*/
+    animation-timing-function: linear;
+}
+
+@keyframes desplazamient{                   /* Desplazar algo desde el 0px a 1200px*/
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1200px;
+    }
+}
+
+@keyframes desplazamiento{                  /* Desplazar e ir rotando desde 0px a 1000px a 0px*/
+    0%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+    50%{
+        margin-left: 1000px;
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }
+}
+
+
+
+/*--------------------- Responsive ---------------------*/
+
+/* Desde la anchura 0px hasta la 888px */
+@media (max-width: 888px){
+    #articles article{
+        width: 40%;
+        background-color: red;
+    }
+}
+
+@media (max-width: 645px){
+    #container{
+        overflow: hidden;
+    }
+
+    aside{
+        float: none;
+        width: 100%;
+        min-height: 40px;
+        line-height: 40px;
+    }
+
+    #articles{
+        width: 100%;
+    }
+
+    #articles article{
+        width: 90%;
+        background-color: blue;
+    }
+}
+
+@media (max-width: 645px){
+    body{
+        background-color: grey;
+    }
+
+    #articles article{
+        width: 90%;
+        background-color: green;
+    }
+}
