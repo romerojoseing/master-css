@@ -34,15 +34,15 @@
 
 /*---------------------- Estilos Generales ----------------------*/
 h1{                                                     /* Selector de Etiqueta */
-    /* Instrucciones */
+    color: gray;
 }
 
 #h1{                                                    /* Selector de Id */
-    /* Instrucciones */
+    color: gray;
 }
 
 .h1{                                                    /* Selector de Clase */
-    /* Instrucciones */
+    color: gray;
 }
 
 
