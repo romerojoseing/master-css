@@ -90,6 +90,7 @@ h1{
     max-height: 1400px;           /* Tamaño Maximo de alto */
     
     margin: 10px;                 /* Margen Externo del texto, imagen o lo que sea */
+    margin: 10px auto;            /* Margen de 10px top y centrar */
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -104,7 +105,7 @@ h1{
     padding: 15px 15px 15px 15px; /* Top Right Botton Left */
 
     border: 1px solid black;            /* Agregar borde Tamaño Tipo y Color */
-    box-shadow: 0px 0px 15px black;     /* Sombras Horizontal Vertical Grosor y Color*/
+    box-shadow: 0px 0px 15px black;     /* Sombras Horizontal Vertical Difuminado y Color*/
     border-radius: 30px 10px 4px 60px;    /* Sup iz, sup der, inf der, inf iz*/
     border-radius: 50%;
     border-radius: 30px;
@@ -279,8 +280,8 @@ input:focus{            /*Para dar estilos cuando estemos trabajando en algo*/
     text-align: center;
     animation-name: desplazamiento;         /*Nombre de la animación*/
     animation-duration: 10s;                /*Tiempo de duracion*/
-    animation-iteration-count: infinite;     /*veces cuanto se va repetie la animacion*/
-    animation-timing-function: linear;
+    animation-iteration-count: infinite;    /*veces cuanto se va repetie la animacion*/
+    animation-timing-function: linear;      /*Siemore va tener la misma velocidad*/
 }
 
 @keyframes desplazamient{                   /* Desplazar algo desde el 0px a 1200px*/
@@ -305,6 +306,43 @@ input:focus{            /*Para dar estilos cuando estemos trabajando en algo*/
     100%{
         margin-left: 0px;
         transform: rotate(0deg);
+    }
+}
+
+#logo .gear{                    /* Estilos del Engranaje */
+    display: block;             /* Para que se comporte como un bloque */
+    float: left;                /* Flotar el Elemento hacia la izquierda */
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 25px;
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear{
+    from{
+        transition: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+#logo:hover .gear{
+    animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
     }
 }
 
