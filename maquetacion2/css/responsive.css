@@ -1,0 +1,275 @@
+@media (max-width:1250px){
+    .wrap{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    #banner h1{
+        width: 100%;
+        font-size: 35px;
+        margin: 33px auto;
+        text-align: center;
+    }
+
+    .card{
+        width: 17%;
+        margin: 1.2%;
+    }
+
+    .card p{
+        width: 90%;
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+    #articles{
+        width: 65%;
+    }
+
+    #articles article{
+        width: 97%;
+    }
+
+    
+
+    #footer .wrap > div{
+        width: 25%;
+        margin: 4%;
+    }
+
+    #footer #browsers img{
+        width: 14%;
+    }
+    
+    #footer h5{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1080px){
+    .card .category{
+        font-size: 17px;
+    }
+
+    .card .description{
+        font-size: 14px;
+    }
+
+    #articles{
+        width: 60%;
+    }
+}
+
+@media (max-width: 950px){
+    #articles{
+        width: 55%;
+    }
+
+    #footer h5{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 840px){
+    #articles{
+        width: 65%;
+    }
+
+    #lateral{
+        width: 25%;
+    }
+
+    #lateral input[type="text"]{
+        width: 78%;
+    }
+
+    .aside-box{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    #login input[type="email"], 
+    #login input[type="password"]{
+        width: 65%;
+    }
+
+    #login #user,
+    #login #password{
+        margin-left: 24px;
+    }
+
+    #login input[type="submit"], 
+    #login input[type="button"], 
+    #login input[type="reset"], 
+    #login button{
+        margin-bottom: 0px;
+    }
+
+    #login input[type="reset"]{
+        display: none;
+    }
+
+    #login a{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    aside h3{
+        font-size: 24px;
+    }
+
+    #articles article h4{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px){
+    .card{
+        height: auto;
+    }
+
+    .card .category{
+        font-size: 15px;
+        margin-top: -15px;
+    }
+    
+    .card .description{
+        display: none;
+    }
+
+    #footer img{
+        max-width: 100%;
+    }
+    #lateral input[type="text"]{
+        width: 70%;
+    }
+}
+
+@media (max-width: 735px){
+    #header{
+        width: 100%;
+        height: 125px;
+        padding-top: 15px;
+    }
+
+    #logo{
+        float: none;
+        width: 200px;
+        margin: 0px auto;
+    }
+
+    #menu{
+        clear: both;
+        float: none;
+        margin: 0px auto;
+        width: 450px;
+        
+    }
+    #banner h1{
+        font-size: 30px;
+    }
+    #footer #browsers img{
+        width: 10%;
+    }
+
+}
+
+@media (max-width: 640px){
+    #articles{
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+    }
+    
+    #lateral{
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+        min-height: auto;
+    }
+
+    #banner h1{
+        font-size: 24px;
+    }
+
+    #lateral input[type="text"]{
+        width: 90%;
+    }
+    #login input[type="email"],
+    #login input[type="password"]{
+        width: 90%;
+    }
+
+    #footer{
+        height: 1190px;
+    }
+    
+    #footer .wrap > div{
+        width: 100%;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    
+    #footer h5{
+        font-size: 30px;
+    }
+
+    .card .icons{
+        font-size: 30px;
+    }
+
+    .card:hover .icons{
+        font-size: 30px;
+    }
+
+    #banner{
+        height: 85px;
+    }
+
+    #banner h1{
+        font-size: 18px;
+    }
+
+    .card .category{
+        font-size: 13px;
+    }
+}
+
+ @media (max-width:500px){
+    #header{
+        width: 100%;
+        height: 280px;
+        
+    } 
+    
+    #menu{
+        clear: both;
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+     }
+
+     #menu ul li{
+        width: 100%;
+        line-height: 50px;
+     }
+
+     #menu ul li a:hover {
+        color: #37bcf9;
+        transform: scale(1,1);
+    }
+
+    #articles .data{
+        float: none;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    #articles article h4{
+        margin-top: 20px;
+    }
+ }
+
+
+

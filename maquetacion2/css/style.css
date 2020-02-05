@@ -44,6 +44,11 @@ body{
     font-family: "WebSymbolsRegular";
 }
 
+.clearfix{
+    float: none;
+    clear: both;
+}
+
 /* Cabecera del Sitio */
 #header{
     width: 100%;
@@ -51,6 +56,7 @@ body{
     background-color: black;
     font-family: "BebasNeue";
     color: white;
+    
 }
 
 #logo{
@@ -72,7 +78,38 @@ body{
     font-size: 30px;
     margin-top: 8px;
     margin-left: 25px;
-}   
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear{
+    from{
+        transition: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+#logo:hover .gear{
+    animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(200%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
 
 #logo h3{
     display: block;             /* Para que se comporte como un bloque */
@@ -81,6 +118,19 @@ body{
     margin-top: 5px;
     transition: all 300ms;
     margin-right: 65px;
+}
+
+#logo:hover h3{
+    animation: fromRight 300ms linear;
+}
+
+@keyframes fromRight{
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 
 #menu{
@@ -118,8 +168,19 @@ body{
     border: 10px solid white;
     box-shadow: 0px 0px 2px gray;
     background-image: url(../img/bakbaner.png);
+    overflow: hidden;
     background-position: -200px -200px;
     margin: 20px auto;
+    animation: backBanner 10s linear;
+}
+
+@keyframes backBanner{
+    0%{
+        background-position: 0px 0px;
+    }
+    100%{
+        background-position: -200px -200px;
+    }
 }
 
 #banner h1{
@@ -146,16 +207,36 @@ body{
     margin-top: 50px;
     cursor: pointer;
     background-color: white;
+    transition: all 300ms;
+}
+
+.card:hover{
+    background-color: black;
+    color: white;
 }
 
 .icons{
     display: block;
-    width: 100px;
+    width: 100%;
     height: 130px;
     font-size: 50px;
     line-height: 110px;
     text-align: center;
     margin: 0 auto;
+    transition: all 300ms;
+}
+
+.card:hover .icons{
+    font-size: 60px;
+    color: #37bcf9;
+}
+
+.card:hover .category{
+    color: white;
+}
+
+.card:hover .description{
+    color: white;
 }
 
 .category{
@@ -337,3 +418,189 @@ aside h3{
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+#social .overlay{
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px #cccccc;
+    background: #f4f7fe;
+    position: absolute;
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: -50px;
+    cursor: pointer;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+#social div:hover .overlay{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+/* Articulos */
+
+#articles{
+    width: 800px;
+    float: left;
+}
+
+#articles h2{
+    display: block;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    background: url('../img/pxgray.png'), white;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+#articles article{
+    width: 97%;
+    height: auto;
+    border: 1px solid #cccccc;
+    margin: 40px auto;
+    padding: 10px;
+    font-family: "TrebuchetMS";
+    background: white;
+    color: black;
+    box-shadow: 1px 1px 2px #dddddd; 
+}
+
+#articles article h4{
+    display: block;
+    font-size: 23px;
+    margin: 3px;
+}
+
+#articles article h4 a{
+    color: #00538c;
+}
+
+#articles article h4 a:hover{
+    text-decoration: underline;
+}
+
+#articles .data{
+    float: right;
+    background: #393d3f;
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    margin: -10px;
+    padding: 4px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px;
+
+}
+
+#articles .data span{
+    margin: 5px;
+}
+
+#articles article p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#blog{
+    height: 100px;
+    margin-top: 50px;
+    line-height: 100px;
+    text-align: center;    
+}
+
+#blog a{
+    display: block;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #00538c;
+}
+
+/* Footer */
+#footer{
+    width: 100%;
+    height: 470px;
+    display: block;
+    background: black;
+    color: white;
+}
+
+#footer .wrap > div{
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMS";
+}
+
+#footer a{
+    color: #37bcf9;
+    transition: all 300ms;
+}
+
+#footer h5{
+    display: block;
+    background: url(../img/pxgray.png), white;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#footer ul li a{
+    display: block;
+    height: 40px;
+}
+
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 0px 0px 5px gray;
+}
+
+#footer img{
+    margin-bottom: 15px;
+}
+
+#footer #browsers img{
+    width: 45px;
+}
+
+
