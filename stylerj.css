@@ -390,3 +390,49 @@ input:focus{            /*Para dar estilos cuando estemos trabajando en algo*/
         background-color: green;
     }
 }
+
+
+
+/*--------------------- Flexbox ---------------------*/
+
+#layout{
+    display: flex;                  /* Agregar Flexvox a la caja principal*/
+    
+    flex-direction: row;            /* ordenar por columnas y que no se salgan del contenedor*/
+    flex-wrap: wrap;
+    
+    flex-flow: row wrap;            /* ordenar por columnas y que no se salgan del contenedor*/
+    
+    /*Horizontal*/
+    justify-content: center;        /* ordenar Contenido al Centro pegado*/
+    justify-content: space-between; /* ordenar Contenido centrado pero con espacios*/
+    justify-content: space-evenly;
+    justify-content: space-around;
+    justify-content: flex-start;    /* ordenar Contenido al Inicio*/
+    justify-content: flex-end;      /* ordenar Contenido al Final*/
+
+    /*Vertical*/
+    align-items: center;            /*Alinear Items al Centro*/
+    align-items: baseline;          /*Alinear Items Top*/
+    align-items: flex-start;
+    align-items: flex-end;
+
+    
+
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.caja{
+    flex-grow: 1;                             /*Todas las cajas van a tener el mismo espacio y rellenan toda la caja*/
+    flex-basis: calc((100% / 3) - 68px);      /*Agregar un tamaño minimo*/
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222222;
+    margin: 10px;
+    background: grey;
+}
