@@ -1,0 +1,146 @@
+h1 {
+  text-decoration: underline;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  color: blue;
+  font-family: arial, helvetica, sans-serif;
+}
+
+p {
+  color: red;
+}
+
+.caja {
+  border: 1px solid black;
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+}
+.caja h1 {
+  color: green;
+}
+.caja p {
+  color: indigo;
+}
+.caja .info {
+  font-size: 10px;
+}
+.caja .info .autor {
+  color: orange;
+  font-size: 15px;
+}
+
+.caja {
+  border: 10px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px, black;
+}
+
+.listado {
+  border: 20px solid blue;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px, green;
+}
+
+.alert-succes, .alert-danger, .alert {
+  border: 1px solid black;
+  background: white;
+  color: black;
+  padding: 10px;
+  width: 80%;
+  margin: 30px auto;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  color: red;
+  border-color: red;
+}
+
+.alert-succes {
+  color: green;
+  border-color: green;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.cajas {
+  width: 900px;
+  margin: 0px auto;
+}
+
+.caja {
+  float: left;
+  width: 22.2222222222%;
+  margin: 10px;
+}
+
+h1 {
+  color: purple;
+}
+
+.listado ul li:nth-child(1) {
+  font-size: 10px;
+  color: orange;
+}
+
+.listado ul li:nth-child(2) {
+  font-size: 20px;
+  color: orange;
+}
+
+.listado ul li:nth-child(3) {
+  font-size: 30px;
+  color: orange;
+}
+
+.listado ul li:nth-child(4) {
+  font-size: 40px;
+  color: orange;
+}
+
+.listado ul li:nth-child(5) {
+  font-size: 50px;
+  color: orange;
+}
+
+.listado ul li:nth-child(6) {
+  font-size: 60px;
+  color: orange;
+}
+
+.listado ul li:nth-child(7) {
+  font-size: 70px;
+  color: orange;
+}
+
+.listado ul li:nth-child(8) {
+  font-size: 80px;
+  color: orange;
+}
+
+.listado ul li:nth-child(9) {
+  font-size: 90px;
+  color: orange;
+}
+
+.listado ul li:nth-child(10) {
+  font-size: 100px;
+  color: orange;
+}
+
+/*# sourceMappingURL=style.css.map */

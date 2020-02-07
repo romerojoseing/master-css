@@ -1,0 +1,151 @@
+// Modulos
+@use 'base';
+@use 'encabezado';
+
+
+// Variables
+$fuente-tipica: arial, helvetica, sans-serif;
+$color-fondo: white;
+$color-letra: blue;
+$color-secundario: red;
+
+
+// Uso de Variables
+body{
+    background-color: $color-fondo;
+}
+
+h1{
+    color: $color-letra;
+    font-family: $fuente-tipica;
+}
+
+p{
+    color: $color-secundario;
+}
+
+
+// Anidacion
+.caja{
+    border: 1px solid black;
+    width: 500px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+
+    h1{
+        color: green;
+    }
+
+    p{
+        color: indigo;
+    }
+
+    .info{
+        font-size: 10px;
+
+        .autor{
+            color: orange;
+            font-size: 15px;
+        }
+    }
+}
+
+
+// Mixins / Funciones
+@mixin crearborde($color, $size, $shadow){
+    border: $size solid $color;
+    border-radius: $size;
+    box-shadow: 0px 0px $size, $shadow;
+}
+
+.caja{
+    @include crearborde(red, 10px, black);
+}
+
+.listado{
+    @include crearborde(blue, 20px, green)
+}
+
+
+// Herencia
+%alert-normal{
+    border: 1px solid black;
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+
+.alert{
+    @extend %alert-normal;
+}
+
+.alert-danger{
+    @extend %alert-normal;
+    color: red;
+    border-color: red;
+}
+
+.alert-succes{
+    @extend %alert-normal;
+    color: green;
+    border-color: green;
+}
+
+
+// Operadores
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+h1{
+    font-size: 20px + 5px;
+}
+
+$caja: 200px;
+$wrap: 900px;
+
+.cajas{
+    width: $wrap;
+    margin: 0px auto;
+}
+
+.caja{
+    float: left;
+    width: $caja / $wrap * 100%;
+    margin: 10px;
+}
+
+
+// Condicionales - If
+h1{
+    @if $color-fondo == #ccc {
+        color: black
+    }
+    @else if $color-fondo == black{
+        color: red;
+    }
+    @else{
+        color: purple;
+    }
+}
+
+
+// For
+$contador: 1;
+
+@for $contador from 1 through 10{
+    .listado ul li:nth-child(#{$contador}){
+        font-size: $contador * 10px;
+        color: orange;
+    }
+}
+
+// Each
+
+// While
