@@ -436,3 +436,33 @@ input:focus{            /*Para dar estilos cuando estemos trabajando en algo*/
     margin: 10px;
     background: grey;
 }
+
+
+/*--------------------- Grid Layout ---------------------*/
+
+.layout{
+    width: 1200px;
+    height: 400px;
+    margin: 0px auto;
+
+    display: grid;                      /* Inicializar Grid de los estilos */
+    grid-gap: 10px;                     /* Dar margenes entre elementos Grid */
+    grid-template-columns: 1fr 1fr;     /* Agregar tamaños a las columnas*/
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-rows: 1fr 1fr 1fr;    /* Agregar tamaños a filas*/
+
+    grid-column-start: 1;               /*Empezar en una columna y terminar en otra*/
+    grid-column-end: 3;
+    grid-column: 1 / 3;
+
+    grid-row: 1 / 3;                   /*EMpezar una fila y terminar en otra*/
+
+    grid-template-areas: 
+        "cabecera cabecera cabecera cabecera cabecera"
+        "menu menu menu menu menu"
+        "contenido contenido contenido contenido lateral"
+        "footer footer footer footer footer";
+
+
+}

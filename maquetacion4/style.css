@@ -1,0 +1,258 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#container{
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid rgba(225, 225, 226, 0.8);
+    box-shadow: 0px 0px 10px #cccccc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    min-height: 600px;
+}
+
+#header{
+    display: grid;
+    grid-template-columns: 68% 30%;
+    align-items: center;
+    
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+.logo{
+    
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+    padding: 10px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #cccccc;
+}
+
+.logo h1{
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+#menu{
+    
+    height: 100%;
+    
+}
+
+#menu ul li{
+    display: grid;
+    justify-content: center;
+}
+
+#menu > ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+
+    
+    width: 100%;
+    list-style: none;
+    height: 100%;
+}
+
+#menu a{
+    
+    text-transform: uppercase;
+    color: #444;
+    padding: 10px;
+    transition: all 300ms;
+}
+
+#menu a:hover{
+    color: white;
+    background-color: #cccccc;
+}
+
+#content{
+    display : grid;
+    grid-template-columns: 20% 1fr;
+    
+    justify-content: space-between;
+
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-gap: 20px;
+    
+    
+}
+
+.project{
+    
+    margin-bottom: 25px;
+    border: 1px solid #cccccc;
+    margin-right: 20px;
+}
+
+.project img{
+    width: 100%;
+}
+
+.project-info{
+    padding: 10px;
+}
+
+.project-info a{
+    font-size: 16px;
+    color: black;
+    transition: all 300ms;
+}
+
+.project-info a:hover{
+    color: cornflowerblue;
+}
+
+.project-info p{
+    font-size: 16px;
+    color: grey;    
+}
+
+#aside{
+    
+    margin-right: 30px;
+    padding: 15px;
+    flex-direction: column;
+}
+
+#aside h2{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+    text-align: center;
+}
+
+#aside ul{
+    
+    list-style: none;
+}
+
+#aside ul li{
+    padding-bottom: 20px;
+}
+
+#aside a{
+    display: block;
+    padding: 20px;
+    background: #eeeeee;
+    color: #444444;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 300ms;
+}
+
+#aside a:hover{
+    background: #444;
+    color: #eeeeee;
+}
+
+#footer{
+    display: grid;
+    grid-template-columns: 65% 30%;
+
+    height: 120px;
+    align-items: center;
+    border-top: 1px solid rgba(225, 225, 226, 0.8);
+}
+
+#footer .logo{
+    
+    opacity: 0.5;
+    
+}
+
+#footer .info{
+    
+    text-align: right;
+    margin-right: 20px;
+    color: #444444;
+}
+
+
+@media (max-width:780px){
+    #header{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+    }
+
+    #header h1{
+        text-align: center;
+    }
+
+    #content{
+        display : grid;
+        grid-template-columns: 100%;
+        
+        justify-content: space-between;
+    
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    #projects{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);              
+    }
+
+    .project{
+        margin: 10px;
+    }
+
+    #aside{
+        margin: 0px;
+    }
+
+    #aside ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+    }
+
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: center;
+        justify-content: center;
+    }
+
+    #footer .logo{
+        margin: 0px;
+        text-align: center;
+    }
+
+    #footer .info{
+        margin: 0px;
+        text-align: center;
+    }
+    
+}
