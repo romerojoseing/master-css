@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#layout{
+    display: flex;                  /* Agregar Flexvox a la caja principal*/
+    /*
+    flex-direction: row;
+    flex-wrap: wrap;
+    */
+    flex-flow: row wrap;            /* ordenar por columnas y que no se salgan del contenedor*/
+    
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    height: 500px;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.caja{
+    /*flex-grow: 1;                             Todas las cajas van a tener el mismo espacio*/
+    /*flex-basis: calc((100% / 3) - 68px);      Agregar un tamaño minimo*/
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222222;
+    margin: 10px;
+    background: grey;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background: green;
+}
+
+
+.blue{
+    background: blue;
+}
+
+.orange{
+    background: orange;
+}
+
