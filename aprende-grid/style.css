@@ -1,0 +1,236 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/*-------------- Grid con areas --------------*/
+
+
+#website-areas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+
+    grid-template-areas: 
+        "cabecera cabecera cabecera cabecera cabecera"
+        "menu menu menu menu menu"
+        "contenido contenido contenido contenido lateral"
+        "footer footer footer footer footer";
+
+
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #cccccc;
+}
+
+#website-areas #cabecera{
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: blue;
+    color: white;
+}
+
+#website-areas #menu{
+    grid-area: menu;   
+
+    background: lightblue;
+    color: black;
+    line-height: 70px;
+}
+
+#website-areas #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#website-areas #contenido{
+    grid-area: contenido;    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;    
+    padding: 20px;
+
+    background: #eeeeee;
+}
+
+#website-areas #contenido article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cccccc;
+    border: 1px solid #555555;
+}
+
+#website-areas #lateral{
+    grid-area: lateral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    background: orange;
+    color: white;
+}
+
+#website-areas #footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: black;
+    color: white;
+}
+
+
+
+/*-------------- Grid --------------*/
+
+#website{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+
+    width: 75%;
+    height: 1000px;
+    margin: 0px auto;
+    border: 1px solid #cccccc;
+}
+
+#website #cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 1 / 6;
+
+    background: blue;
+    color: white;
+}
+
+#website #menu{
+    
+    grid-column: 1 / 6;
+
+    background: lightblue;
+    color: black;
+    line-height: 70px;
+}
+
+#website #menu ul{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#website #contenido{
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;    
+    padding: 20px;
+
+    background: #eeeeee;
+}
+
+#website #contenido article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #cccccc;
+    border: 1px solid #555555;
+}
+
+#website #lateral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 5 / 6;
+
+    background: orange;
+    color: white;
+}
+
+#website #footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 6;
+    background: black;
+    color: white;
+}
+
+
+
+
+/*-------------- Ejemplos --------------*/
+
+.layout{
+    width: 80%;
+    min-height: 400px;
+    margin: 0px auto;
+
+    display: grid;                      /* Inicializar Grid de los estilos */
+    grid-gap: 10px;                     /* Dar margenes entre elementos Grid */
+    /*grid-template-columns: 1fr 1fr;      Agregar tamaños a las columnas*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr) 1fr;
+
+
+    padding: 10px;
+
+
+    border: 3px solid orange;
+}
+
+.layout .caja{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222222;
+    background: gray;
+}
+
+.layout .red{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background: red;
+}
+
+.layout .green{
+    grid-row: 2 / 6;
+    background: green;
+}
+
+.layout .blue{
+    grid-column: 2 / 4;
+    background: blue;
+}
+
+.layout .pink{
+    grid-row: 3 / 5;
+    grid-column: 2 / 3;
+    background: pink;
+}
+
+.layout .orange{
+    grid-row: 3 / 5;
+    background: orange;
+}
+
+.layout .bluel{
+    grid-column: 2 / 4;
+    background: lightblue;
+}
