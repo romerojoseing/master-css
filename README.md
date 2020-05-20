@@ -8,10 +8,10 @@ _Para el desarrollo de este proyecto se utilizaron las siguientes tecnologías:_
 
 * [HTML 5](https://es.wikipedia.org/wiki/HTML) - Maquetación y estructura web.
 * [CSS 3](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada) - Diseño de estilos.
-* [SASS](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada) - Diseño de estilos.
-* [LESS](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada) - Diseño de estilos.
-* [Flexbox](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada) - Diseño de estilos.
-* [Grid](https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada) - Diseño de estilos.
+* [SASS](https://sass-lang.com/) - Preprocesador CSS.
+* [LESS](http://lesscss.org/) - Preprocesador CSS..
+* [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) - Layout de CSS.
+* [Grid](https://www.w3schools.com/css/css_grid.asp) - Layout de CSS.
 * [Bootstrap 4](https://getbootstrap.com/) - Framework para CSS.
 
 <br>
