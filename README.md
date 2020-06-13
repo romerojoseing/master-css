@@ -20,7 +20,7 @@ _Para el desarrollo de este proyecto se utilizaron las siguientes tecnologías:_
 
 _Si te gusta lo que hago, visita mi web y comparte mi contenido, también puedes seguirme en mis redes para estar al tanto de nuevas publicaciones y proyectos interesantes que estaré desarrollando._
 
-Diseñado con ❤️ por [Romero José](https://romerojose.com/)
+Diseñado con 💖 - por [Romero José](https://romerojose.com/)
 
 ### Redes Sociales
 
